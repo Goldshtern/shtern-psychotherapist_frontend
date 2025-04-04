@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f6f9f8;
+  color: #2c3e50;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.page__content {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+}

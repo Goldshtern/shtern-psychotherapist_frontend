@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header__logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #eaf3f1;
+  padding: 6px;
+}
+
+.header__title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #34495e;
+}
+
+.header__date {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 4px;
+}
