@@ -1,0 +1,36 @@
+.services {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.services__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #34495e;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services__item {
+  flex: 1 1 200px;
+  background-color: #f6f9f8;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services__item-title {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.services__item-description {
+  color: #7f8c8d;
+  font-size: 1rem;
+}

@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.about__photo {
+  max-width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .about__text {
   flex: 1;
   min-width: 280px;

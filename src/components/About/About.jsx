@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.css";
+import photo from "../../assets/Shtern.jpeg";
 
 function About() {
   return (
     <section id="about" className="about">
       <div className="about__content">
+        <img className="about__photo" src={photo} alt="Инна Штерн photo" />
         <div className="about__text">
           <h2 className="about__title">Обо мне</h2>
           <p>
