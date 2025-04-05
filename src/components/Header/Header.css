@@ -56,3 +56,101 @@
 .header__nav-link:hover {
   color: #1abc9c;
 }
+
+.header__title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #34495e;
+}
+
+.header__date {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 4px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__nav-link {
+  font-size: 1rem;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__nav-link:hover {
+  color: #1abc9c;
+}
+
+/* Tablet styles (between 600px and 1024px) */
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .header__logo {
+    height: 50px;
+    padding: 5px;
+  }
+
+  .header__title {
+    font-size: 1.5rem;
+  }
+
+  .header__date {
+    font-size: 0.85rem;
+  }
+
+  .header__nav {
+    gap: 0.8rem;
+  }
+
+  .header__nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Smartphone styles (max-width: 599px) */
+
+@media (max-width: 599px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .header__logo {
+    height: 40px;
+    padding: 4px;
+  }
+
+  .header__title {
+    font-size: 1.25rem;
+  }
+
+  .header__date {
+    font-size: 0.8rem;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header__nav-link {
+    font-size: 0.9rem;
+  }
+}

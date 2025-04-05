@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 2rem 0;
   border-bottom: 1px solid #e0e0e0;
-  scroll-margin-top: 100px; /* adjust based on your header height */
+  scroll-margin-top: 100px;
 }
 
 .about__content {
@@ -23,4 +23,41 @@
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #34495e;
+}
+
+/* Tablet styles (between 600px and 1024px) */
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .about {
+    padding: 1.5rem 0;
+  }
+
+  .about__title {
+    font-size: 1.5rem;
+  }
+
+  .about__content {
+    gap: 1.5rem;
+  }
+}
+
+/* Smartphone styles (max-width: 599px) */
+@media (max-width: 599px) {
+  .about {
+    padding: 1rem 0;
+  }
+
+  .about__title {
+    font-size: 1.3rem;
+  }
+
+  .about__content {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .about__text {
+    flex: 1;
+    min-width: 100%;
+  }
 }
