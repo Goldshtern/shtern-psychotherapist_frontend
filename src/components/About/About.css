@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  scroll-margin-top: 100px; /* adjust based on your header height */
+}
+
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}

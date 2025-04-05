@@ -11,6 +11,10 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   min-height: 100vh;
   display: flex;
