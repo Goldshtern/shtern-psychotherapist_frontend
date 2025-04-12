@@ -5,6 +5,10 @@
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
 }
 
 .header__logo-and-title {
@@ -92,8 +96,6 @@
   color: #1abc9c;
 }
 
-/* Tablet styles (between 600px and 1024px) */
-
 @media (max-width: 1024px) and (min-width: 600px) {
   .header {
     padding-bottom: 1.5rem;
@@ -121,8 +123,6 @@
     font-size: 0.9rem;
   }
 }
-
-/* Smartphone styles (max-width: 599px) */
 
 @media (max-width: 599px) {
   .header {
