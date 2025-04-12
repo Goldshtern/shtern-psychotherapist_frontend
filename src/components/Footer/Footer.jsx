@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -13,6 +14,7 @@ function Footer() {
           rel="noopener noreferrer"
         >
           Aleksandr Goldshtern
+          <FaGithub className="footer__icon" />
         </a>{" "}
         © {new Date().getFullYear()}
       </p>

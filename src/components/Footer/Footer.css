@@ -37,6 +37,11 @@
   outline-offset: 2px;
 }
 
+.footer__icon {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 1.5rem 0.8rem;
