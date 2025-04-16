@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import Chatbot from "../Chatbot/Chatbot";
 
 function Contact() {
   return (
@@ -39,6 +40,8 @@ function Contact() {
           Записаться на консультацию
         </a>
       </div>
+
+      <Chatbot />
     </section>
   );
 }
