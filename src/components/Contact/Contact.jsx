@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 import Chatbot from "../Chatbot/Chatbot";
 
-function Contact() {
+function Contact({ chatbotProps }) {
   return (
     <section id="contact" className="contact">
       <h2 className="contact__title">Контакты</h2>
@@ -41,7 +41,7 @@ function Contact() {
         </a>
       </div>
 
-      <Chatbot />
+      <Chatbot {...chatbotProps} />
     </section>
   );
 }
