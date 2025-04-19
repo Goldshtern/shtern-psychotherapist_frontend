@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import axios from "axios";
+import { getChatResponse } from "../../utils/chatApi";
 import "./Chatbot.css";
 
 function Chatbot() {
@@ -15,50 +15,22 @@ function Chatbot() {
     setInput("");
     setLoading(true);
 
-    setTimeout(function () {
-      const simulatedResponse = {
-        role: "assistant",
-        content:
-          "Это симулированный ответ. Подключите OpenAI API для получения реальных данных.",
-      };
-
-      setMessages([...newMessages, simulatedResponse]);
+    getChatResponse(newMessages, function (err, response) {
+      if (err) {
+        setMessages([
+          ...newMessages,
+          { role: "assistant", content: "Ошибка при запросе к API." },
+        ]);
+      } else {
+        setMessages([...newMessages, response]);
+      }
       setLoading(false);
-    }, 1000);
-
-    //const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
-
-    //axios
-    //.post(
-    //"https://api.openai.com/v1/chat/completions",
-    //{
-    //model: "gpt-3.5-turbo",
-    //messages: newMessages,
-    //},
-    //{
-    //headers: {
-    //Authorization: "Bearer " + apiKey,
-    //"Content-Type": "application/json",
-    //},
-    //}
-    //)
-    //.then(function (response) {
-    //const botMessage = response.data.choices[0].message;
-    //setMessages([...newMessages, botMessage]);
-    //setLoading(false);
-    //})
-    //.catch(function (error) {
-    //setMessages([
-    //...newMessages,
-    //{ role: "assistant", content: "Ошибка при запросе к API." },
-    //]);
-    //setLoading(false);
-    //});
+    });
   };
 
   return (
     <div className="chatbot">
-      <h3 className="chatbot__title">Чат с помошником Инны Штерн</h3>
+      <h3 className="chatbot__title">Чат с помощником Инны Штерн</h3>
       <div className="chatbot__window">
         {messages.map(function (msg, index) {
           return (
